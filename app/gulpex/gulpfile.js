@@ -3,7 +3,8 @@ var gulp = require ('gulp');
 var imagemin = require('gulp-imagemin');
 var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
-var concat = require('gulp-concat')
+var concat = require('gulp-concat');
+var jshint = require('gulp-jshint');
 // top level functions
 // gulp.task - define tasks
 // gulp.src - point to files to user
@@ -41,6 +42,13 @@ gulp.task('sass', function(){
   gulp.src('src/sass/*scss')
     .pipe(sass().on ('error', sass.logError))
     .pipe(gulp.dest('public/css'));
+});
+
+// Lint Task
+gulp.task('lint', function () {
+  return gulp.src('src/js/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
 });
 
 //scripts
