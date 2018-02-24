@@ -1,32 +1,24 @@
 {
-  "name": "stopify-personal",
+  "name": "spotify",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "init": "^0.1.2"
-  },
-  "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.1",
-    "gulp-imagemin": "^4.1.0",
-    "gulp-jshint": "^2.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0",
-    "jshint": "^2.9.5"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lvayavong/stopify-personal.git"
-  },
-  "author": "",
+  "author": "Mike Grabski <me@mikegrabski.com> (http://mikegrabski.com/)",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lvayavong/stopify-personal/issues"
-  },
-  "homepage": "https://github.com/lvayavong/stopify-personal#readme"
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.6",
+    "handlebars": "^4.0.11",
+    "inspect": "0.0.2",
+    "mysql2": "^1.5.2",
+    "passport": "^0.4.0",
+    "passport-spotify": "^1.0.0",
+    "request": "^2.83.0",
+    "sequelize": "^4.33.4"
+  }
 }
